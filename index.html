@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML Stuff -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Montserrat:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    
+    <!-- CSS Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Pure CSS addition -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+
+    <!-- JavaScript libraries for Vega-Lite-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Scripts-->
+    <script src="vega_lite_embedding.js"></script>
+
+    <title> FIT3179 Visualisation 2 </title>
+</head>
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <img src="banner.jpg" />
+        </div>
+    </div>
+
+    <h3> AUSTRALIAN EDUCATION SNAPSHOT 2021 </h1>
+    <h2> FIT3179 | EZEKIEL FISCHER | DOMAIN: EDUCATION  </h2>
+
+    <div class="pure-g">
+        <div class="pure-u-1-8">. </div>
+        <div class="pure-u-1-2">
+            <p> This visualisation aims to elucidate <span class='emphasised-sentence'>the trends and notable facts </span>of Australias educational outcomes.  Through an analysis of <span class='emphasised-sentence'>school location and performance,private and public 
+            schooling styles and school-finishing rates based on local government area (LGA) </span> this visualisation hopes to provide a broad view of the current state of the system. </p> 
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div>
+        <div class="pure-g">
+            <div class="pure-u-1-8">. </div>
+            <div class="pure-g">
+                <div class="pure-u-1-8">. </div>
+                <h3> :Section 1 </h3>
+            </div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1-8">. </div>
+            <div class="pure-u-1-4">
+                <h2> This is what a subtitle for a graph showing 
+                    <span class="variable_1"> Variable 1 </span> and 
+                    <span class="variable_2"> Variable 2 </span>looks like </h2>
+                <p class="graph-explanation"> Text # 2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution 
+                </p>
+            </div>
+            <div class="pure-u-1-2">
+                <div id="bar_chart"></div>
+            </div>
+            <div class="pure-u-1-8">. </div>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div>
+        <div class="pure-g">
+            <div class="pure-u-1-8">. </div>
+            <h3> :Section 2 </h3>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1-8">. </div>
+            <div class="pure-u-1-2">
+                <div id="dot_map"></div>
+            </div>
+            <div class="pure-u-1-4">
+                <h2> This is what a subtitle for a graph showing 
+                    <span class="variable_1"> Variable 1 </span> and 
+                    <span class="variable_2"> Variable 2 </span>looks like </h2>
+                <p class="graph-explanation"> Text # 2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section 3 -->
+    <div>
+        <div class="pure-g">
+            <div class="pure-u-1-8">. </div>
+            <h3> :Section 3 </h3>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1-8">. </div>
+            <div class="pure-u-1-4">
+                <h2> This is what a subtitle for a graph showing 
+                    <span class="variable_1"> Variable 1 </span> and 
+                    <span class="variable_2"> Variable 2 </span>looks like </h2>
+                <p class="graph-explanation"> Text # 2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution 
+                </p>
+            </div>
+            <div class="pure-u-1-2">
+                <div id="bubble_plot"></div>
+            </div>
+            <div class="pure-u-1-8">. </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
