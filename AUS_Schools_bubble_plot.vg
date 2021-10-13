@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1000,
+    "height": 1000,
+    "title": "Correlation between socioeconomic advantage and single-gendered schools",
+    "data": {
+    "url": "ACARA School Profile.csv"
+    },
+    "mark": "circle",
+    "encoding": {
+        "x": {
+        "field": "Boys to Girls Ratio",
+        "type": "quantitative"
+        },
+        "y": {
+        "field": "ICSEA",
+        "type": "quantitative"
+        },
+        "color": {
+        "field": "School Sector",
+        "type": "nominal"
+        },
+        "size": {
+        "field": "Total Enrolments",
+        "type": "quantitative"
+        }
+    }
+   }
