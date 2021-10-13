@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": { "text": "Victorian LGA School Completion" },
+  "width": 1000,
+  "height": 1000,
+  "data": {
+      "url": "School Completion LGA.csv"
+},
+ "mark":"bar",
+ "encoding": {
+     "y": {"field":"LGA", "type":"nominal"},
+     "x": {"field":"Percentage Completed Grade 10 or above", "type":"quantitative"},
+     "color": {"field": "Percentage Completed Grade 10 or above", 
+        "type":"quantitative"}
+
+ }
+}
