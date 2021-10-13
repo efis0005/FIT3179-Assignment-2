@@ -4,7 +4,7 @@
   "width": 1000,
   "height": 1000,
   "data": {
-      "url": "VIC_LGA_School_Completion_bar_chart.csv"
+      "url": "VIC_LGA_School_Completion.csv"
 },
  "mark":"bar",
  "encoding": {
