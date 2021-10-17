@@ -1,37 +1,37 @@
 ﻿Role,Qualification,Relevancy
-Manager,bachelor degree + ,16.1
-Manager,bachelor degree,29.4
-Manager,below bachlor,37.8
-Manager,irrelevant,10.9
-Professionals,bachelor degree + ,26
-Professionals,bachelor degree,50
-Professionals,below bachlor,16.4
-Professionals,irrelevant,3.3
-Technicians and trades workers,bachelor degree + ,2.6
-Technicians and trades workers,bachelor degree,7.2
-Technicians and trades workers,below bachlor,78.2
-Technicians and trades workers,irrelevant,6.4
-Community and personal service workers,bachelor degree + ,5.1
-Community and personal service workers,bachelor degree,10.1
-Community and personal service workers,below bachlor,66.1
-Community and personal service workers,irrelevant,12.7
-Clerical and administrative workers,bachelor degree + ,8.7
-Clerical and administrative workers,bachelor degree,20
-Clerical and administrative workers,below bachlor,44.4
-Clerical and administrative workers,irrelevant,20.4
-Sales workers,bachelor degree + ,3.7
-Sales workers,bachelor degree,10.2
-Sales workers,below bachlor,42.9
-Sales workers,irrelevant,34.2
-Machinery operators and drivers,bachelor degree + ,1.1
-Machinery operators and drivers,bachelor degree,1.9
-Machinery operators and drivers,below bachlor,34.9
-Machinery operators and drivers,irrelevant,43.9
-Labourers,bachelor degree + ,1.4
-Labourers,bachelor degree,6.1
-Labourers,below bachlor,31.3
-Labourers,irrelevant,41.3
-Total,bachelor degree + ,12.9
-Total,bachelor degree,25.7
-Total,below bachlor,40.7
-Total,irrelevant,13.8
+Manager,bachelor degree + ,16.10
+Manager,bachelor degree,29.40
+Manager,below bachlor,37.80
+Manager,irrelevant,10.90
+Professionals,bachelor degree + ,26.00
+Professionals,bachelor degree,50.00
+Professionals,below bachlor,16.40
+Professionals,irrelevant,3.30
+Technicians and trades workers,bachelor degree + ,2.60
+Technicians and trades workers,bachelor degree,7.20
+Technicians and trades workers,below bachlor,78.20
+Technicians and trades workers,irrelevant,6.40
+Community and personal service workers,bachelor degree + ,5.10
+Community and personal service workers,bachelor degree,10.10
+Community and personal service workers,below bachlor,66.10
+Community and personal service workers,irrelevant,12.70
+Clerical and administrative workers,bachelor degree + ,8.70
+Clerical and administrative workers,bachelor degree,20.00
+Clerical and administrative workers,below bachlor,44.40
+Clerical and administrative workers,irrelevant,20.40
+Sales workers,bachelor degree + ,3.70
+Sales workers,bachelor degree,10.20
+Sales workers,below bachlor,42.90
+Sales workers,irrelevant,34.20
+Machinery operators and drivers,bachelor degree + ,1.10
+Machinery operators and drivers,bachelor degree,1.90
+Machinery operators and drivers,below bachlor,34.90
+Machinery operators and drivers,irrelevant,43.90
+Labourers,bachelor degree + ,1.40
+Labourers,bachelor degree,6.10
+Labourers,below bachlor,31.30
+Labourers,irrelevant,41.30
+Total,bachelor degree + ,12.90
+Total,bachelor degree,25.70
+Total,below bachlor,40.70
+Total,irrelevant,13.80
