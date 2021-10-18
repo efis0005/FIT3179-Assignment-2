@@ -53,8 +53,22 @@
           "latitude": {"field": "Latitude", "type": "quantitative"},
           "shape":{"field": "Type", "type": "nominal"},
           "color":{"field": "Sector", "type":"nominal", "scale": {"domain": ["Catholic", "Government", "Independent"], "range": ["#ffbf79", "#4c78a8", "#f58518" ]}, 
-          "legend": {"title": "Legend", "direction":"vertical"}}
-          
+          "legend": {"title": "Legend", "direction":"vertical"}},
+          "tooltip": [
+            {"field": "School Name", "type": "nominal", "title": "School Name"},
+            {
+              "field": "Sector",
+              "type": "nominal"
+            },
+            {
+              "field": "Type",
+              "type": "nominal"
+            },
+            {
+              "field": "Suburb",
+              "type": "nominal"
+            }
+          ]
         }
       }
     ]

@@ -10,6 +10,10 @@
        "y": {"field":"Region", "type":"nominal", "title": "", "axis":{"labels" : false, "ticks": false}},
        "x": {"field": "Percentage Unenrolled", "type":"quantitative", "title": "%"},
        "color": {"field": "Region",
-        "scale": {"domain": ["East Asia and Pacific", "Europe and Central Asia", "Latin America and Caribbean", "Middle East and North Africa", "North America"], "range": ["#ffbf79", "#4c78a8", "#f58518", "#9ecae9", "#fc8a6b" ]}}
+        "scale": {"domain": ["East Asia and Pacific", "Europe and Central Asia", "Latin America and Caribbean", "Middle East and North Africa", "North America"],
+             "range": ["#ffbf79", "#4c78a8", "#f58518", "#9ecae9", "#fc8a6b" ]}},
+      "tooltip": [{"field": "Region", "type": "nominal", "title": "Region"},
+        {"field":"Percentage Unenrolled", "type": "quantitative", "title": "Primary School Aged Kids Not Enrolled in School (%)"}
+      ]
    }
   }

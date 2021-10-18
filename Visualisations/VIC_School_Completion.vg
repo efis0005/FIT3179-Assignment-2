@@ -83,11 +83,11 @@
             "legend": {"title": "%", "direction":"vertical"}
           },
           "tooltip": [
-            {"field": "LGA", "type": "nominal", "title": "Suburb"},
+            {"field": "LGA", "type": "nominal", "title": "Local Government Area"},
             {
               "field": "Percentage Completed Grade 10 or above",
               "type": "quantitative",
-              "title": "Median Price",
+              "title": "Completed Grade 10 or above (%)",
               "format": ","
             }
           ]

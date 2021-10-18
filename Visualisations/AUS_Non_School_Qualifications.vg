@@ -28,6 +28,8 @@
             "legend": {
                 "title": "%"
             }
-        }
+        },
+      "tooltip": [{"field": "relative to national average", "type": "nominal", "title": "State Position Relative to national average (%)"}
+      ]
     }
 }

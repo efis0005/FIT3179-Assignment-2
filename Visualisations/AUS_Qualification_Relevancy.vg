@@ -22,7 +22,12 @@
       "color": {
         "field": "Qualification",
         "scale": {"domain": ["bachelor degree", "bachelor degree + ", "below bachlor", "irrelevant"], "range": ["#ffbf79", "#4c78a8", "#f58518", "#9ecae9" ]}
-      }
+      }, 
+      "tooltip": [
+        {"field": "Role", "type": "nominal", "title": "Role"},
+        {"field": "Qualification", "type": "nominal", "title": "Qualification"},
+        {"field": "Relevancy", "type": "nominal", "title": "Relevancy to Current Job (%)"}
+      ]
     },
     "config": {
       "view": {"stroke": "transparent"},
