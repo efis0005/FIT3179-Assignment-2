@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "data": {
+        "url": "https://raw.githubusercontent.com/efis0005/FIT3179-Assignment-2/main/Datasets/WORLD_Percentage_Unerolled.csv"
+    },
+   "mark":"bar",
+   "encoding": {
+       "y": {"field":"Region", "type":"nominal", "title": "", "axis":{"labels" : false, "ticks": false}},
+       "x": {"field": "Percentage Unenrolled", "type":"quantitative", "title": "%"},
+       "color": {"field": "Region",
+        "scale": {"domain": ["East Asia and Pacific", "Europe and Central Asia", "Latin America and Caribbean", "Middle East and North Africa", "North America"], "range": ["#ffbf79", "#4c78a8", "#f58518", "#9ecae9", "#fc8a6b" ]}}
+   }
+  }

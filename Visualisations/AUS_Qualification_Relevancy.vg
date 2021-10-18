@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": { "url": "https://raw.githubusercontent.com/efis0005/FIT3179-Assignment-2/main/Datasets/AUS_Relevancy_of_Qualifcation.csv"},
+    "height": 30,
+    "width": 450,
+    "mark": "bar",
+    "encoding": {
+      "row": {
+        "field": "Role", "type": "nominal", "spacing": 20,
+        "header": {"labelOrient": "right", "labelAngle":0, "labelPadding":5}
+      },
+      "x": {
+        "field": "Relevancy",
+        "title": "Relevancy as a Percentage",
+        "type": "quantitative",
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "Qualification",
+        "axis": null
+      },
+      "color": {
+        "field": "Qualification",
+        "scale": {"domain": ["bachelor degree", "bachelor degree + ", "below bachlor", "irrelevant"], "range": ["#ffbf79", "#4c78a8", "#f58518", "#9ecae9" ]}
+      }
+    },
+    "config": {
+      "view": {"stroke": "transparent"},
+      "axis": {"domainWidth": 1}
+    }
+  }
+  

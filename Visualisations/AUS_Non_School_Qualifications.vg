@@ -1,0 +1,33 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "projection": {"type": "equirectangular"},
+        "data": {
+        "url": "https://raw.githubusercontent.com/efis0005/FIT3179-Assignment-2/main/australian_states.topo.json",
+        "format": {"type": "topojson", "feature": "STE_2021_AUST_GDA2020-1"}
+        },
+        "transform": [
+        {
+    "lookup": "properties.STE_NAME21",
+    "from": {
+        "data": {
+        "url": "https://raw.githubusercontent.com/efis0005/FIT3179-Assignment-2/main/Datasets/AUS_Non_School_Qualifications.csv"
+        },
+    "key": "State",
+    "fields": ["relative to national average"]
+    }
+    }
+    ],
+        "mark": {"type": "geoshape"},
+        "encoding": {
+        "color": {
+            "field": "relative to national average",
+            "type": "quantitative",
+            "scale": {"scheme": "redblue", "domain":[-8.5, 2]},
+            "legend": {
+                "title": "%"
+            }
+        }
+    }
+}
