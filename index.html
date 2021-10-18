@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML Stuff -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Montserrat:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    
+    <!-- CSS Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Pure CSS addition -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+
+    <!-- JavaScript libraries for Vega-Lite-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Scripts-->
+    <script src="vega_lite_embedding.js"></script>
+
+    <title> FIT3179 Visualisation 2 </title>
+
+</head>
+    <div class="preamble">
+    <div>
+        <h3> <span class="inline"> AUSTRALIAN <br> <b> EDUCATION </b> <br> SNAPSHOT <br> 2021. </span></h3>
+        <h2> FIT3179 | EZEKIEL FISCHER | DOMAIN: EDUCATION  </h2>
+    </div>
+
+    </div>
+
+    <div class="midpoint">
+        <h4> <span class="inline"> EDUCATION IN VICTORIA. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><img src="Images/victoria_logo.png", style="width: 100px; height: 53px;"></h4>
+    </div>
+
+    <div class="page">
+
+    <!-- Section 1 -->
+    <h5>  "How does <b> Victoria </b> hold up when it comes to education? Lets have a look at our performance in non-tertiary schooling..." </h4>
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <h2> This interactive chlorpleth map of Victorian Local Government Areas (LGAs) shows
+                <span class="variable_1"> percentage of people who have graduated grade 10 and above </span> </h2>
+            <div class="column">
+                <p class="graph-explanation"> This graph shows the tie between location and education attainment
+                    for different <b>regions</b> in the state. Notably it appears the innermost suburbs closest to
+                    metropolotan Melbourne achieve the <b>highest level of education attainment </b> on average, with 
+                    suburbs such as <b> Melbourne, Port Phillip and Boroondara </b> seeing <b> ~95%</b> of 
+                    their inhabitants graduating grade 10 at minimum. 
+                </p>
+            </div>
+            <div class="column">
+                <p class="graph-explanation"> The outer suburbs fare the worst with LGAs such as 
+                    <b> Loddon, Hindsmarsh and Central Goldfields </b> seeing only <b> ~70% </b>of their inhabitants
+                    graduating grade 10 or better. </p>
+                    <p> <br> The data is clear- urban environments are educated environments.
+                </p>
+            </div>
+        </div>   
+        <div id="vis-1a" class="pure-u-1-2"></div>
+    </div>
+
+
+    <!-- Section 2-->
+    <div class="pure-g">
+        <div id="vis-1c" class="pure-u-1-2"></div>
+        <div class="pure-u-1-2">
+            <h2> This shows the total Victorian students who continue their schooling into the next year, comparing rates for
+                <span class="variable_1"> Government Schools </span> and 
+                <span class="variable_2"> Independent Schools </span>.</h2>
+            <div class="column">
+                <p class="graph-explanation">  We can note that <b> independent schools </b> perform best at retaining students by a fairly
+                    large margin, typically retaining <b>~%5</b> more students on average when compared to the next best
+                    school type (<b> Non-government schools </b>).
+                </p>
+            </div>
+            <div class="column">
+                <p class="graph-explanation"> <b>Government Schools </b> on the other hand are unfortunately
+                    quite poor at getting their students to return, especially in recent years, where only approximately
+                    <b> 85% </b> of students return year on year. 
+                </p>
+            </div>
+        </div>   
+    </div>
+
+    <!-- Section 2-->
+    <div class="pure-g">
+        <div id="vis-1b" class="pure-u-1-1"></div>
+    </div>
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+        <h2> This map of Victoria shows the location of all primary, secondary and combined schools, colour coding based on if they are a 
+            <span class="variable_1"> Government School, </span>  
+            <span class="variable_2"> Independent School, </span> or
+            <span class="variable_3"> Catholic School. </span>
+        </h2>
+        <div class="column">
+            <p class="graph-explanation">  Use the zoom slider and drop down menu to interactively get a better idea of 
+                school density all accross the State. From an overview it is clear that schools are <b> densely distributed around the CBD </b>
+                and get more and more sparse further from the city.
+            </p>
+        </div>
+        <div class="column">
+            <p class="graph-explanation"> Population centres such as <b> Bendigo and Shepparton </b> see schools densely distributed
+                near the centre of their suburbs; while coastal cities such as <b> Sale and Geelong </b> typically see their schools constructed
+                quite close to the beach.
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Midpoint -->
+    <div class="midpoint">
+        <h4> <span class="inline"> EDUCATION IN AUSTRALIA. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><img src="Images/australia_government_logo.png", style="width: 100px; height: 50px; margin:0px"></h4>
+    </div>
+
+    <div class="page">
+
+        <!-- Section 4 -->
+        <h5> How about on a National Level? Does <b> Australias </b> stellar reputation for tertiary level education reflect reality? </h4>
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <h2> This national chloropleth map shows how good each state is at tertiary enrolments
+                    <span class="variable_1"> relative to the national average </span> </h2>
+                <div class="column">
+                    <p class="graph-explanation"> This graph was created by deriving the percentage of citizens per state
+                        enrolled in <b> post-secondary (tertiary) education </b> and comparing it to the national average to display
+                        which states have high populations of students relative to the overall population and other states.
+                    </p>
+                </div>
+                <div class="column">
+                    <p class="graph-explanation"> Notably we can see that <b> South Australia and Tasmania </b> have the least
+                        amount of its citizens enrolled in <b> tertiary education </b>, with their rates being quite signifcantly below 
+                        the national average (typically ~5-8% below). This is fairly inline with expectation, as most highly rated Australian universities are 
+                        in <b> Queensland, New South Wales and Victoria. </b>
+                    </p>
+                </div>
+            </div>   
+            <div id="vis-2a" class="pure-u-1-2"></div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <h2> This grouped bar chart demonstrates degree relevancy based on current role, comparing between
+                    <span class="variable_3"> Bachelor Degrees, </span>  
+                    <span class="variable_4"> Bachelor Degrees and Better, </span>  
+                    <span class="variable_1"> Qualifications below Bachlor Degrees </span> and
+                    <span class="variable_2"> Qualifications totally irrelevant to field </span> </h2>
+                <div class="column">
+                    <p class="graph-explanation"> Notably we can see the highest rates of relevancy between <b> Qualification level and current role </b>
+                        are for industries such as <b> Technicians/Trade workers </b> and <b> Community and personal service workers. </b> This is a fairly
+                        logical discovery as such roles typically require workers to become qualified ad hoc (ie. discover the role first then get qualified).
+                    </p>
+                </div>
+                <div class="column">
+                    <p class="graph-explanation"> This is in quite stark contrast with most <b> Bachelor Degree </b> holders, who in almost all roles, rated
+                        their degree as approximately <b> ~50% or lower </b> relevant to their current role, <b> Machine Operators and Drivers </b> in particular
+                        seeing exceedingly low relevancy between role and bachelors degree (<b> only ~5% </b>).
+                    </p>
+                </div>
+            </div>  
+            
+        </div>
+        <div class="pure-g">
+            <div id="vis-2b" class="pure-u-1-1"></div> 
+        </div>
+    </div>
+
+    <!-- Midpoint -->
+    <div class="midpoint">
+        <h4> <span class="inline"> EDUCATION IN THE WORLD. </span></h4>
+    </div>
+
+    <div class="page">
+
+        <!-- Section 1 -->
+        <h5> Finally, Where is Australias place in the World when it comes to education? How does it fare with primary & secondary schooling and tertiary enrolment compared to other countries?  </h4>
+        <div class="pure-g">
+            <div id="vis-3a" class="pure-u-1-1"></div>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <h2> This global map shows the 
+                    <span class="variable_1"> percentage of students enrolled in tertiary study, </span> by country and year </h2>
+                <div class="column">
+                    <p class="graph-explanation">  The <b> Year Interactivity Slider </b> can be used to see the change in tertiary enrolments
+                        over a ~50 year period. It is particularly notable that true early adoption of tertiary education
+                        appeared to occur in <b> Canada, the United States and Russia </b> in the 80s.
+                    </p>
+                </div>
+                <div class="column">
+                    <p class="graph-explanation"> <b> Australia </b> did not see widespread adoption of tertiary education (which it now has a repuation for) until
+                        approximately the mid 90s and has since steadily grown. 
+                    </p>
+                </div>
+            </div>   
+        </div>
+
+        <!-- Section 2 -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+                <h2> This bar chart displays the percentage of  
+                    <span class="variable_1"> primary school age kids </span> who are not enrolled in primary school, by 
+                    <span class="variable_1"> region of the world </span> </h2>
+                <div>
+                    <p class="graph-explanation"> Whether children are enrolled in school by primary school age is a fairly good metric for 
+                        measuring the attitudes of school adoption, and allow us to see how these attitudes differ
+                        according to location in the world. <br> There is also a disparity between income levels, with <b> High and Middle Income </b> countries
+                        seeing approximately <b> 5%~10%</b> of primary school age kids unerolled, while <b> Low income countries </b> see nearly %20 on average unerolled.
+                    </p>
+                </div>
+            </div>
+            <div id="vis-3b" class="pure-u-2-3"></div>   
+        </div>
+    </div>
+
+    <div class="midpoint">
+        <pre> <p class="signature"> Ezekiel Fischer | ID: 30650534 | Data Sourced from:   education.vic.gov.au,   stats.data.abs.gov.au,   databank.world.bank.org </p></pre>
+    </div>
+</body>
+</html>
